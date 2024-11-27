@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michelle Levia - Data Diri</title>
+  
+  <!-- Link untuk Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Internal CSS -->
+  <style>
+    /* Umum */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      color: #333;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.6;
+      margin: 0 0 10px;
+    }
+
+    /* Header */
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu-overlay.active {
+      display: flex;
+    }
+
+    .menu-content {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .menu-content h2 {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .menu-content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu-content ul li {
+      margin: 10px 0;
+    }
+
+    .menu-content ul a {
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-content ul a:hover {
+      text-decoration: underline;
+    }
+
+    .close-btn {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .close-btn:hover {
+      background-color: #45a049;
+    }
+
+    /* Profile Section */
+    .profile {
+      text-align: center;
+      padding: 20px;
+      background-color: white;
+      margin: 20px auto;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-image {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #ccc;
+      margin: 10px 0;
+    }
+
+    /* Data Diri Section */
+    .data-diri {
+      text-align: left;
+      margin: 20px;
+    }
+
+    .data-diri h2 {
+      font-size: 20px;
+      color: #4CAF50;
+    }
+
+    .data-diri p {
+      margin: 5px 0;
+    }
+
+    /* Penjelasan Section */
+    .Penjelasan {
+      background-color: white;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+
+    .Penjelasan h3 {
+      font-size: 18px;
+      color: #4CAF50;
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Portofolio Michelle Levia</h1>
+    <i id="menu-icon" class="fas fa-bars menu-icon"></i>
+    <div id="menu-overlay" class="menu-overlay">
+      <div class="menu-content">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="Event.html">1.Event</a></li>
+          <li><a href="memori.html" id="memori-link">2.Memori</a></li>
+          <li><a href="About.html" id="About-link">3.About</a></li>
+        </ul>
+        <button id="close-overlay" class="close-btn">Tutup</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section Profile -->
+  <section class="profile">
+    <div class="profile-image">
+      <img src="images/Levi1.jpg" alt="Michelle Levia" class="profile-pic">
+      <img src="images/Levi2.jpg" alt="Michelle Levia" class="profile-pic">
+    </div>
+    <div class="data-diri">
+      <h2>1. Data Diri</h2>
+      <p><strong>Nama:</strong> Michelle Levia</p>
+      <p><strong>Umur:</strong> 15 Tahun</p>
+      <p><strong>Zodiak:</strong> Aquarius</p>
+      <p><strong>Tinggi:</strong> 170cm</p>
+      <p><strong>Hobi:</strong> Menari</p>
+      <p><strong>Jiko:</strong> Are you ready? Jalani hari ini dengan menari bersamaku Yuhuu! Aku Levi</p>
+    </div>
+  </section>
+
+  <!-- Penjelasan Section -->
+  <div class="Penjelasan">
+    <h3>2. Penjelasan</h3>
+    <p> Michelle Levia Arifin atau kerap di sapa levi ini adalah member trainee generasi 12 JKT48.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Michelle Levia. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Menu Overlay
+    const menuIcon = document.getElementById('menu-icon');
+    const menuOverlay = document.getElementById('menu-overlay');
+    const closeOverlay = document.getElementById('close-overlay');
+
+    menuIcon.addEventListener('click', () => {
+      menuOverlay.classList.add('active');
+    });
+
+    closeOverlay.addEventListener('click', () => {
+      menuOverlay.classList.remove('active');
+    });
+  </script>
+</body>
+</html>
